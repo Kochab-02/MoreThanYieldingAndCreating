@@ -1,4 +1,4 @@
-package com.name.moreThanYAC.weapons;
+package com.kochab02.moreThanYAC.weapons;
 
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Rarity;

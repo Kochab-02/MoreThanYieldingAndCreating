@@ -1,6 +1,6 @@
-package com.name.moreThanYAC.weapons;
+package com.kochab02.moreThanYAC.weapons;
 
-import com.name.moreThanYAC.utils.ModToolTiers;
+import com.kochab02.moreThanYAC.utils.ModToolTiers;
 import net.minecraft.world.item.SwordItem;
 
 public class WeaponDemonBlade extends SwordItem

@@ -1,9 +1,9 @@
-package com.name.moreThanYAC.event;
+package com.kochab02.moreThanYAC.event;
 
-import com.name.moreThanYAC.MoreThanYAC;
-import com.name.moreThanYAC.entity.EntityDemon;
-import com.name.moreThanYAC.init.ModItemHandler;
-import com.name.moreThanYAC.utils.ModDamageType;
+import com.kochab02.moreThanYAC.MoreThanYAC;
+import com.kochab02.moreThanYAC.entity.EntityDemon;
+import com.kochab02.moreThanYAC.init.ModItemHandler;
+import com.kochab02.moreThanYAC.utils.ModDamageType;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.entity.EquipmentSlot;

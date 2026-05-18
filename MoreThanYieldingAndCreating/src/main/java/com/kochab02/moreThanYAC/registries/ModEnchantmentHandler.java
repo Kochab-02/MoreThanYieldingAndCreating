@@ -23,11 +23,6 @@ public class ModEnchantmentHandler
     public static final EnchantmentCategory SHIELD_ITEM = EnchantmentCategory.create("shieldItem",
             item -> item instanceof ShieldItem);
 
-    public static final RegistryObject<Enchantment> ENCHANT_SHISHIQIUSHI =
-            MODENCHANTMENTS.register("shishiqiushi",() -> new ModEnchantmentBuilder()
-                    .rarity(Rarity.RARE).category(EnchantmentCategory.WEAPON)
-                    .addCompatibleSlot(EquipmentSlot.MAINHAND)
-                    .setMaxLevel(1).build());
     public static final RegistryObject<Enchantment> ENCHANT_DECISIVE_STRIKE =
             MODENCHANTMENTS.register("decisive_strike", () -> new ModEnchantmentBuilder()
                     .rarity(Rarity.RARE).category(ModEnchantmentHandler.ATTACKABLE_ITEM)

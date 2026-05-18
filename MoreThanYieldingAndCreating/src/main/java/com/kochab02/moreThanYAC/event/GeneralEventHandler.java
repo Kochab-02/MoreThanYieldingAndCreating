@@ -47,7 +47,6 @@ public class GeneralEventHandler
     public static void onCreatureAttack(LivingAttackEvent event){
         LivingEntity target = event.getEntity();
         if (!(event.getSource().getEntity() instanceof LivingEntity attacker)) return;
-        var source = event.getSource();
         Random random = new Random(System.currentTimeMillis());
         if (attacker.level().isClientSide()) return;
 
@@ -73,29 +72,11 @@ public class GeneralEventHandler
                         } catch (Exception e) {
                             e.printStackTrace();
                         }
-                        return;
                         //killed, avoid other logics
                     }
                 }
             }
         }
-
-        /*//bottom priority,实事求是
-        if (ModConfig.ENABLE_SHISHIQIUSHI.get() && attacker instanceof Player){
-            InteractionHand hand = attacker.getUsedItemHand();
-            ItemStack item = attacker.getItemInHand(hand);
-            if (item.getEnchantmentLevel(ModEnchantmentHandler.ENCHANT_SHISHIQIUSHI.get())>0){
-                CompoundTag tag = target.getPersistentData();
-                tag.putFloat("shishiqiushi_damage",event.getAmount());
-                try {
-                    Field amountField = LivingAttackEvent.class.getDeclaredField("amount");
-                    amountField.setAccessible(true);
-                    amountField.setFloat(event, 0.0f);
-                } catch (Exception e) {
-                    e.printStackTrace();
-                }
-            }
-        }*/
     }
 
     @SubscribeEvent

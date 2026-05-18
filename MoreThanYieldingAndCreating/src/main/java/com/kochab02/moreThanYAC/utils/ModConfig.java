@@ -6,7 +6,6 @@ import org.apache.commons.lang3.tuple.Pair;
 public class ModConfig
 {
     public static final ForgeConfigSpec.BooleanValue ENABLE_COMPENSATION;
-    public static final ForgeConfigSpec.BooleanValue ENABLE_SHISHIQIUSHI;
     public static final ForgeConfigSpec.BooleanValue ENABLE_SANGJINTIANLIANG;
     public static final ForgeConfigSpec.BooleanValue ENABLE_HIGH_GROUND_ADVANTAGE;
     public static final ForgeConfigSpec.DoubleValue HIGH_GROUND_ADVANTAGE_DAMAGE_INDEX;
@@ -27,7 +26,6 @@ public class ModConfig
         CLIENT_CONFIG = clientPair.getRight();
 
         ENABLE_COMPENSATION = commonPair.getLeft().enableCompensation;
-        ENABLE_SHISHIQIUSHI = commonPair.getLeft().enableShiShiQiuShi;
         ENABLE_SANGJINTIANLIANG = commonPair.getLeft().enableSangJinTianLiang;
         ENABLE_HIGH_GROUND_ADVANTAGE = commonPair.getLeft().enableHighGroundAdvantage;
         HIGH_GROUND_ADVANTAGE_DAMAGE_INDEX = commonPair.getLeft().highGroundAdvantageDamageIndex;
@@ -38,7 +36,6 @@ public class ModConfig
 
     private static class CommonConfig{
         public final ForgeConfigSpec.BooleanValue enableCompensation;
-        public final ForgeConfigSpec.BooleanValue enableShiShiQiuShi;
         public final ForgeConfigSpec.BooleanValue enableSangJinTianLiang;
         public final ForgeConfigSpec.BooleanValue enableHighGroundAdvantage;
         public final ForgeConfigSpec.DoubleValue highGroundAdvantageDamageIndex;
@@ -49,8 +46,6 @@ public class ModConfig
             builder.push("enchantments");
             enableCompensation = builder.comment("Whether to enable to give players that activates 前功尽弃 a compensation.")
                     .define("enableCompensation",true);
-            enableShiShiQiuShi = builder.comment("Whether to enable the enchantment \"实事求是\"" )
-                    .define("enableShiShiQiuShi",false);
             builder.pop();
 
             builder.push("features");

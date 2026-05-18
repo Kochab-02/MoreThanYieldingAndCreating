@@ -41,7 +41,8 @@ For Chinese information,please visit McMod and search for author.
 
   Gives a basic damage bonus of 0.25×(level+2) points.
 
-  After killing a monster, player get a 2% × level × maxHealth damage bonus when attacking next     monster.
+  After killing a monster, player get a 2% × level × maxHealth damage bonus when attacking next monster.
+  
 4.Weakness Focus
 
   Max level 4, can be attached to swords.

@@ -1,4 +1,4 @@
-package com.name.moreThanYAC.utils;
+package com.kochab02.moreThanYAC.utils;
 
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.Tier;

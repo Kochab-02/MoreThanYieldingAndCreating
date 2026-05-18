@@ -1,11 +1,11 @@
-package com.name.moreThanYAC.event;
+package com.kochab02.moreThanYAC.event;
 
-import com.name.moreThanYAC.MoreThanYAC;
-import com.name.moreThanYAC.entity.EntityCorruptedDemon;
-import com.name.moreThanYAC.entity.EntityDemon;
-import com.name.moreThanYAC.init.ModEffectHandler;
-import com.name.moreThanYAC.init.ModEntityHandler;
-import com.name.moreThanYAC.utils.ModConfig;
+import com.kochab02.moreThanYAC.MoreThanYAC;
+import com.kochab02.moreThanYAC.entity.EntityCorruptedDemon;
+import com.kochab02.moreThanYAC.entity.EntityDemon;
+import com.kochab02.moreThanYAC.registries.ModEffectHandler;
+import com.kochab02.moreThanYAC.registries.ModEntityHandler;
+import com.kochab02.moreThanYAC.utils.ModConfig;
 import net.minecraft.core.BlockPos;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.server.level.ServerLevel;
@@ -23,10 +23,10 @@ import net.minecraftforge.fml.common.Mod;
 import java.util.Objects;
 import java.util.UUID;
 
-import static com.name.moreThanYAC.entity.skills.SlashSkillTriggerer.triggerSlash;
-import static com.name.moreThanYAC.entity.skills.SurgeSkillTriggerer.triggerSurge;
-import static com.name.moreThanYAC.utils.EntityCategoryJudgement.isFriendly;
-import static com.name.moreThanYAC.utils.ModUsefulFunctions.calculateCanGenerateBlockPos;
+import static com.kochab02.moreThanYAC.entity.skills.SlashSkillTriggerer.triggerSlash;
+import static com.kochab02.moreThanYAC.entity.skills.SurgeSkillTriggerer.triggerSurge;
+import static com.kochab02.moreThanYAC.utils.EntityCategoryJudgement.isFriendly;
+import static com.kochab02.moreThanYAC.utils.ModUsefulFunctions.calculateCanGenerateBlockPos;
 
 @Mod.EventBusSubscriber(modid = MoreThanYAC.MODID,bus=Mod.EventBusSubscriber.Bus.FORGE)
 public class EffectEventHandler

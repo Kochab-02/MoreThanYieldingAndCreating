@@ -1,6 +1,6 @@
-package com.name.moreThanYAC.entity.skills;
+package com.kochab02.moreThanYAC.entity.skills;
 
-import com.name.moreThanYAC.MoreThanYAC;
+import com.kochab02.moreThanYAC.MoreThanYAC;
 import net.minecraft.commands.arguments.EntityAnchorArgument;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.nbt.CompoundTag;
@@ -9,7 +9,7 @@ import net.minecraftforge.event.TickEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 
-import static com.name.moreThanYAC.utils.ParticleGenerator.generateBurstParticles;
+import static com.kochab02.moreThanYAC.utils.ParticleGenerator.generateBurstParticles;
 
 @Mod.EventBusSubscriber(modid = MoreThanYAC.MODID)
 public class SlashSkillTriggerer

@@ -1,10 +1,10 @@
-package com.name.moreThanYAC;
+package com.kochab02.moreThanYAC;
 
-import com.name.moreThanYAC.init.ModEffectHandler;
-import com.name.moreThanYAC.init.ModEnchantmentHandler;
-import com.name.moreThanYAC.init.ModEntityHandler;
-import com.name.moreThanYAC.init.ModItemHandler;
-import com.name.moreThanYAC.utils.ModConfig;
+import com.kochab02.moreThanYAC.registries.ModEffectHandler;
+import com.kochab02.moreThanYAC.registries.ModEnchantmentHandler;
+import com.kochab02.moreThanYAC.registries.ModEntityHandler;
+import com.kochab02.moreThanYAC.registries.ModItemHandler;
+import com.kochab02.moreThanYAC.utils.ModConfig;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.ModLoadingContext;
 import net.minecraftforge.fml.common.Mod;

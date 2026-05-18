@@ -1,8 +1,8 @@
-package com.name.moreThanYAC.init;
+package com.kochab02.moreThanYAC.registries;
 
-import com.name.moreThanYAC.MoreThanYAC;
-import com.name.moreThanYAC.entity.EntityCorruptedDemon;
-import com.name.moreThanYAC.entity.EntityDemon;
+import com.kochab02.moreThanYAC.MoreThanYAC;
+import com.kochab02.moreThanYAC.entity.EntityCorruptedDemon;
+import com.kochab02.moreThanYAC.entity.EntityDemon;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.MobCategory;
 import net.minecraftforge.event.entity.EntityAttributeCreationEvent;

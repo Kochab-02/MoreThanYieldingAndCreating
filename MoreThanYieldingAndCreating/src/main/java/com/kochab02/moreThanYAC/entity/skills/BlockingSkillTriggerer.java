@@ -1,7 +1,7 @@
-package com.name.moreThanYAC.entity.skills;
+package com.kochab02.moreThanYAC.entity.skills;
 
-import com.name.moreThanYAC.MoreThanYAC;
-import com.name.moreThanYAC.init.ModEnchantmentHandler;
+import com.kochab02.moreThanYAC.MoreThanYAC;
+import com.kochab02.moreThanYAC.registries.ModEnchantmentHandler;
 import net.minecraft.commands.arguments.EntityAnchorArgument;
 import net.minecraft.core.BlockPos;
 import net.minecraft.network.chat.Component;

@@ -1,4 +1,4 @@
-package com.name.moreThanYAC.utils;
+package com.kochab02.moreThanYAC.utils;
 
 import net.minecraft.core.particles.ParticleOptions;
 import net.minecraft.server.level.ServerLevel;

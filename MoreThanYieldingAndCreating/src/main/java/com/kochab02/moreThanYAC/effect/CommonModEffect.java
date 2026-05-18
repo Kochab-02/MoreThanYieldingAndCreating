@@ -1,4 +1,4 @@
-package com.name.moreThanYAC.effect;
+package com.kochab02.moreThanYAC.effect;
 
 import net.minecraft.world.effect.MobEffect;
 import net.minecraft.world.effect.MobEffectCategory;

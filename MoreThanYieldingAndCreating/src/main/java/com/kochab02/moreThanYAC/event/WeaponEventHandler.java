@@ -2,7 +2,7 @@ package com.kochab02.moreThanYAC.event;
 
 import com.kochab02.moreThanYAC.MoreThanYAC;
 import com.kochab02.moreThanYAC.entity.EntityDemon;
-import com.kochab02.moreThanYAC.init.ModItemHandler;
+import com.kochab02.moreThanYAC.registries.ModItemHandler;
 import com.kochab02.moreThanYAC.utils.ModDamageType;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.world.damagesource.DamageSource;

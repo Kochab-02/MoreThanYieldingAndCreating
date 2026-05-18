@@ -1,19 +1,16 @@
-package com.name.moreThanYAC.init;
+package com.kochab02.moreThanYAC.registries;
 
-import com.name.moreThanYAC.MoreThanYAC;
+import com.kochab02.moreThanYAC.MoreThanYAC;
 
-import com.name.moreThanYAC.utils.ModToolTiers;
-import com.name.moreThanYAC.weapons.WeaponDefensiveShield;
-import com.name.moreThanYAC.weapons.WeaponDemonBlade;
-import com.name.moreThanYAC.weapons.WeaponDemonSword;
-import net.minecraft.world.food.FoodProperties;
+import com.kochab02.moreThanYAC.utils.ModToolTiers;
+import com.kochab02.moreThanYAC.weapons.WeaponDefensiveShield;
+import com.kochab02.moreThanYAC.weapons.WeaponDemonBlade;
+import com.kochab02.moreThanYAC.weapons.WeaponDemonSword;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Rarity;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
-
-import java.util.Locale;
 
 public class ModItemHandler
 {

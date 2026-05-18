@@ -1,7 +1,7 @@
-package com.name.moreThanYAC.init;
+package com.kochab02.moreThanYAC.registries;
 
-import com.name.moreThanYAC.MoreThanYAC;
-import com.name.moreThanYAC.utils.ModEnchantmentBuilder;
+import com.kochab02.moreThanYAC.MoreThanYAC;
+import com.kochab02.moreThanYAC.utils.ModEnchantmentBuilder;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.item.AxeItem;
 import net.minecraft.world.item.ShieldItem;

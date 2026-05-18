@@ -1,7 +1,7 @@
-package com.name.moreThanYAC.entity.skills;
+package com.kochab02.moreThanYAC.entity.skills;
 
-import com.name.moreThanYAC.MoreThanYAC;
-import com.name.moreThanYAC.utils.ModConfig;
+import com.kochab02.moreThanYAC.MoreThanYAC;
+import com.kochab02.moreThanYAC.utils.ModConfig;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.sounds.SoundEvents;
@@ -13,7 +13,7 @@ import net.minecraftforge.event.entity.living.LivingEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 
-import static com.name.moreThanYAC.utils.ParticleGenerator.generateBurstParticles;
+import static com.kochab02.moreThanYAC.utils.ParticleGenerator.generateBurstParticles;
 
 @Mod.EventBusSubscriber(modid = MoreThanYAC.MODID)
 public class SurgeSkillTriggerer

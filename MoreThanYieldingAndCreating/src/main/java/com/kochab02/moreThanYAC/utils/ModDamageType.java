@@ -1,6 +1,6 @@
-package com.name.moreThanYAC.utils;
+package com.kochab02.moreThanYAC.utils;
 
-import com.name.moreThanYAC.MoreThanYAC;
+import com.kochab02.moreThanYAC.MoreThanYAC;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;

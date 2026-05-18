@@ -1,12 +1,12 @@
-package com.name.moreThanYAC.event;
+package com.kochab02.moreThanYAC.event;
 
 //this class tries to combine the event listeners into one so that their order can be regulated
 
-import com.name.moreThanYAC.MoreThanYAC;
-import com.name.moreThanYAC.init.ModEnchantmentHandler;
-import com.name.moreThanYAC.utils.FunctionCalculator;
-import com.name.moreThanYAC.utils.ModConfig;
-import com.name.moreThanYAC.utils.ParticleGenerator;
+import com.kochab02.moreThanYAC.MoreThanYAC;
+import com.kochab02.moreThanYAC.registries.ModEnchantmentHandler;
+import com.kochab02.moreThanYAC.utils.FunctionCalculator;
+import com.kochab02.moreThanYAC.utils.ModConfig;
+import com.kochab02.moreThanYAC.utils.ParticleGenerator;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.world.InteractionHand;
@@ -27,7 +27,7 @@ import net.minecraftforge.fml.common.Mod;
 import java.lang.reflect.Field;
 import java.util.Random;
 
-import static com.name.moreThanYAC.utils.EntityCategoryJudgement.isHostile;
+import static com.kochab02.moreThanYAC.utils.EntityCategoryJudgement.isHostile;
 
 //Attack--当机立断，决定是否击杀,如果击杀，原始伤害值被调至0,一个巨额伤害被存储--
 //Hurt--除恶务尽，如果触发，增加a的基础伤害--从天而降，如果触发，则伤害值乘以b--高地/低地/暴击机制，伤害值乘以c

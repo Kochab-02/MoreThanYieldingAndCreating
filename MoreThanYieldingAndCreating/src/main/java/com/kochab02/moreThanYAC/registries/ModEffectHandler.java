@@ -1,7 +1,7 @@
-package com.name.moreThanYAC.init;
+package com.kochab02.moreThanYAC.registries;
 
-import com.name.moreThanYAC.MoreThanYAC;
-import com.name.moreThanYAC.effect.CommonModEffect;
+import com.kochab02.moreThanYAC.MoreThanYAC;
+import com.kochab02.moreThanYAC.effect.CommonModEffect;
 import net.minecraft.world.effect.MobEffect;
 import net.minecraft.world.effect.MobEffectCategory;
 import net.minecraftforge.registries.DeferredRegister;

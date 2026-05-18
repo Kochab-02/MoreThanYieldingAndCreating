@@ -1,7 +1,7 @@
-package com.name.moreThanYAC.event;
+package com.kochab02.moreThanYAC.event;
 
-import com.name.moreThanYAC.MoreThanYAC;
-import com.name.moreThanYAC.init.ModItemHandler;
+import com.kochab02.moreThanYAC.MoreThanYAC;
+import com.kochab02.moreThanYAC.registries.ModItemHandler;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;

@@ -1,6 +1,6 @@
-package com.name.moreThanYAC.entity;
+package com.kochab02.moreThanYAC.entity;
 
-import com.name.moreThanYAC.init.ModItemHandler;
+import com.kochab02.moreThanYAC.registries.ModItemHandler;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.world.DifficultyInstance;
 import net.minecraft.world.entity.EntityType;

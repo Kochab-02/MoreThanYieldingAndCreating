@@ -1,10 +1,10 @@
-package com.name.moreThanYAC.client;
+package com.kochab02.moreThanYAC.client;
 
-import com.name.moreThanYAC.MoreThanYAC;
-import com.name.moreThanYAC.client.renderer.EntityCorruptedDemonRenderer;
-import com.name.moreThanYAC.client.renderer.EntityDemonRenderer;
-import com.name.moreThanYAC.init.ModEntityHandler;
-import com.name.moreThanYAC.init.ModItemHandler;
+import com.kochab02.moreThanYAC.MoreThanYAC;
+import com.kochab02.moreThanYAC.client.renderer.EntityCorruptedDemonRenderer;
+import com.kochab02.moreThanYAC.client.renderer.EntityDemonRenderer;
+import com.kochab02.moreThanYAC.registries.ModEntityHandler;
+import com.kochab02.moreThanYAC.registries.ModItemHandler;
 import net.minecraft.client.renderer.item.ItemProperties;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraftforge.api.distmarker.Dist;

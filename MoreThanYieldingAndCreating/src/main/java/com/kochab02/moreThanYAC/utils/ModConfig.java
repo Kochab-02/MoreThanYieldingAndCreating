@@ -1,4 +1,4 @@
-package com.name.moreThanYAC.utils;
+package com.kochab02.moreThanYAC.utils;
 
 import net.minecraftforge.common.ForgeConfigSpec;
 import org.apache.commons.lang3.tuple.Pair;

@@ -1,15 +1,12 @@
-package com.name.moreThanYAC.event;
+package com.kochab02.moreThanYAC.event;
 
-import com.name.moreThanYAC.MoreThanYAC;
-import com.name.moreThanYAC.entity.EntityDemon;
-import com.name.moreThanYAC.entity.skills.SlashSkillTriggerer;
-import com.name.moreThanYAC.utils.ModDamageType;
+import com.kochab02.moreThanYAC.MoreThanYAC;
+import com.kochab02.moreThanYAC.utils.ModDamageType;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.damagesource.DamageSource;
-import net.minecraft.world.damagesource.DamageTypes;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.phys.AABB;

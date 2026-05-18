@@ -1,8 +1,8 @@
-package com.name.moreThanYAC.event;
+package com.kochab02.moreThanYAC.event;
 
-import com.name.moreThanYAC.MoreThanYAC;
-import com.name.moreThanYAC.init.ModEnchantmentHandler;
-import com.name.moreThanYAC.utils.ModConfig;
+import com.kochab02.moreThanYAC.MoreThanYAC;
+import com.kochab02.moreThanYAC.registries.ModEnchantmentHandler;
+import com.kochab02.moreThanYAC.utils.ModConfig;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.player.Player;

@@ -1,4 +1,4 @@
-package com.name.moreThanYAC.enchantment;
+package com.kochab02.moreThanYAC.enchantment;
 
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.MobType;

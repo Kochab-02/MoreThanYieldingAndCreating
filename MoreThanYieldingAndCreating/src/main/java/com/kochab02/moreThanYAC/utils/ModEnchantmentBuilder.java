@@ -1,6 +1,6 @@
-package com.name.moreThanYAC.utils;
+package com.kochab02.moreThanYAC.utils;
 
-import com.name.moreThanYAC.enchantment.CommonModEnchantment;
+import com.kochab02.moreThanYAC.enchantment.CommonModEnchantment;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.item.enchantment.Enchantment.Rarity;
 import net.minecraft.world.item.enchantment.EnchantmentCategory;

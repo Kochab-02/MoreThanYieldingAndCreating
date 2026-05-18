@@ -1,7 +1,7 @@
-package com.name.moreThanYAC.client.renderer;
+package com.kochab02.moreThanYAC.client.renderer;
 
-import com.name.moreThanYAC.MoreThanYAC;
-import com.name.moreThanYAC.entity.EntityDemon;
+import com.kochab02.moreThanYAC.MoreThanYAC;
+import com.kochab02.moreThanYAC.entity.EntityDemon;
 import net.minecraft.client.model.HumanoidModel;
 import net.minecraft.client.model.geom.ModelLayers;
 import net.minecraft.client.renderer.entity.EntityRendererProvider;

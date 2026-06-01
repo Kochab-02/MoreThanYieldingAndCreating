@@ -3,9 +3,11 @@ This is a Minecraft mod adding various interesting stuff, including single and m
 
 However, some features are not available in single-player mode.
 
-Until now(2026.5.18,mod version 1.4.1-alpha,all the features included are listed below).
+Until now(2026.5.18,mod version 1.5.0-alpha,all the features included are listed below).
 
 For Chinese information,please visit McMod and search for author.
+
+For further new features, please read the update file in each release.
 
 中文信息详见mcmod百科，搜索作者“北极二”。
 
@@ -71,4 +73,22 @@ For Chinese information,please visit McMod and search for author.
 
   The demon always spawns at z+5, requires 3-block-high air.
 
+-Creatures
+
+1.Demon
+
+  Uses basic humanoid model, looks like a 'dark' zombie with red eyes.Spawns with two demon's swords (won't drop).
+
+  Has 30 points health. Deals 2.25/2.5/3.75 + 4 damage (for easy,normal and hard)
+
+  Double Demon: spawns as two demons. When one of them gets killed, the other one gets a permanent power and speed boost.
+
+  Demon Slash: rushes towards its target after a few seconds of stop. Stops when hit any entity or block. Deals damage to the entity that stops it.
+
+2.Corrupted demon
+
+  Basically same as Demon, only the appearance is even 'darker'. Spawns with two demon's blades (won't drop).
+
+  Has 15 points of health. Deals 3/4/6 + 6 damage (for easy,normal and hard)
+  
 -(THIS IS NOT THE END, THE INTRO WILL BE ADDED LATER)

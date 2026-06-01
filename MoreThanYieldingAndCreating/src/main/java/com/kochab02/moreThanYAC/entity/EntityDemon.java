@@ -67,6 +67,7 @@ public class EntityDemon extends Monster
         switch (difficulty){
             case PEACEFUL -> finalDamage = baseDamage*0;
             case EASY -> finalDamage = Math.min(baseDamage*0.5f+1f,baseDamage);
+            case NORMAL -> finalDamage = baseDamage;
             case HARD -> finalDamage = baseDamage*1.5f;
         }
         return target.hurt(this.damageSources().mobAttack(this), finalDamage);

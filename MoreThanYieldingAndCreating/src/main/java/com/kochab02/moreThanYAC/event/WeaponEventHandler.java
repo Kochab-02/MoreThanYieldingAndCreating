@@ -15,18 +15,5 @@ import net.minecraftforge.fml.common.Mod;
 @Mod.EventBusSubscriber(modid = MoreThanYAC.MODID,bus=Mod.EventBusSubscriber.Bus.FORGE)
 public class WeaponEventHandler
 {
-    @SubscribeEvent
-    public static void onDemonAttack(LivingAttackEvent event){
-        var source = event.getSource();
-        if (!(source.getEntity() instanceof EntityDemon demon)) return;
-        if (source.is(ModDamageType.DEMON) || source.is(ModDamageType.DEMON_SLASH)) return;
-        if (!(event.getEntity() instanceof LivingEntity)) return;
-        LivingEntity victim = event.getEntity();
-        if (!(demon.getItemBySlot(EquipmentSlot.MAINHAND).getItem().equals(ModItemHandler.DEMON_SWORD.get()))) return;
-        event.setCanceled(true);
-        var holder = demon.level().registryAccess().
-                registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(ModDamageType.DEMON);
-        DamageSource damageSource = new DamageSource(holder, demon);
-        victim.hurt(damageSource,event.getAmount()+2f);
-    }
+
 }

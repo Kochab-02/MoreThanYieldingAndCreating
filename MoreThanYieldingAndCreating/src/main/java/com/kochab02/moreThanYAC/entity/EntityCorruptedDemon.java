@@ -2,11 +2,9 @@ package com.kochab02.moreThanYAC.entity;
 
 import com.kochab02.moreThanYAC.registries.ModItemHandler;
 import net.minecraft.nbt.CompoundTag;
+import net.minecraft.world.Difficulty;
 import net.minecraft.world.DifficultyInstance;
-import net.minecraft.world.entity.EntityType;
-import net.minecraft.world.entity.EquipmentSlot;
-import net.minecraft.world.entity.MobSpawnType;
-import net.minecraft.world.entity.SpawnGroupData;
+import net.minecraft.world.entity.*;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.ai.goal.*;
@@ -58,5 +56,21 @@ public class EntityCorruptedDemon extends Monster
         this.setDropChance(EquipmentSlot.MAINHAND, 0.0f);
         this.setDropChance(EquipmentSlot.OFFHAND, 0.0f);
         return spawnData;
+    }
+
+    @Override
+    public boolean doHurtTarget(Entity target){
+        if (this.level().isClientSide()) return false;
+        float baseDamage = (float) this.getAttributeValue(Attributes.ATTACK_DAMAGE);
+        Difficulty difficulty = this.level().getDifficulty();
+
+        float finalDamage = baseDamage;
+        switch (difficulty){
+            case PEACEFUL -> finalDamage = baseDamage*0;
+            case EASY -> finalDamage = Math.min(baseDamage*0.5f+1f,baseDamage);
+            case NORMAL -> finalDamage = baseDamage;
+            case HARD -> finalDamage = baseDamage*1.5f;
+        }
+        return target.hurt(this.damageSources().mobAttack(this), finalDamage);
     }
 }

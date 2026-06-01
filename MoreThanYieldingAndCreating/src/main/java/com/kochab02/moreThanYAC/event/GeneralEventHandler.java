@@ -177,12 +177,6 @@ public class GeneralEventHandler
                 moreDamage+=damage;
             }
         }
-        //实事求是
-        /*if (victimTag.contains("shishiqiushi_damage") && ModConfig.ENABLE_SHISHIQIUSHI.get()){
-            float damage = victimTag.getFloat("shishiqiushi_damage");
-            moreDamage+=damage;
-            victimTag.remove("shishiqiushi_damage");
-        }*/
 
         event.setAmount(event.getAmount()*damageIndex+moreDamage);
     }

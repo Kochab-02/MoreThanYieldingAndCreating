@@ -3,7 +3,7 @@ This is a Minecraft mod adding various interesting stuff, including single and m
 
 However, some features are not available in single-player mode.
 
-Until now(2026.5.18,mod version 1.5.0-alpha,all the features included are listed below).
+Until now(2026.5.18,mod version 1.4.2-alpha,all the features included are listed below).
 
 For Chinese information,please visit McMod and search for author.
 

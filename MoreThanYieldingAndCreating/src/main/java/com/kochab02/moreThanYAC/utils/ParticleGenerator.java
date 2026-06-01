@@ -60,10 +60,6 @@ public class ParticleGenerator
         double y = entity.getY() + 0.1;
         double z = entity.getZ();
 
-        /*ArrayList<Double> xis = new ArrayList<>();
-        ArrayList<Double> zis = new ArrayList<>();
-        ArrayList<Double> vxis = new ArrayList<>();
-        ArrayList<Double> vzis = new ArrayList<>();*/
         double xis,zis,vxis,vzis;
         for (int index=0;index<count;index++){
             double currentAngle = (index * 2 * Math.PI) / count;
@@ -74,7 +70,8 @@ public class ParticleGenerator
             vzis = speed*Math.sin(currentAngle)+ MathUtils.sgn(Math.sin(currentAngle))*random.nextDouble()*0.1d;
 
             if (level instanceof ServerLevel serverLevel) {
-                serverLevel.sendParticles(particleType, xis, y, zis, 1, -vxis, 0, -vzis, 0.0);
+                serverLevel.sendParticles(particleType, xis, y, zis, 0, -vxis, 0, -vzis,1.0);
+                serverLevel.sendParticles(particleType, xis, y, zis, 1, -vxis, 0, -vzis,0.0);
             } else {
                 level.addParticle(particleType, xis, y, zis, -vxis, 0, -vzis);
             }

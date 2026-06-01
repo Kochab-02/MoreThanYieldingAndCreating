@@ -11,6 +11,7 @@ public class ModConfig
     public static final ForgeConfigSpec.DoubleValue HIGH_GROUND_ADVANTAGE_DAMAGE_INDEX;
     public static final ForgeConfigSpec.DoubleValue LOWER_GROUND_DISADV_DAMAGE_INDEX;
     public static final ForgeConfigSpec.BooleanValue ENABLE_GENERAL_CRITICAL;
+    public static final ForgeConfigSpec.IntValue DEMON_POWER_COOLDOWN;
     
     public static final ForgeConfigSpec.BooleanValue ENABLE_SURGE_PARTICLES;
 
@@ -32,6 +33,7 @@ public class ModConfig
         LOWER_GROUND_DISADV_DAMAGE_INDEX = commonPair.getLeft().lowerGroundDisadvDamageIndex;
         ENABLE_GENERAL_CRITICAL = commonPair.getLeft().enableGeneralCritical;
         ENABLE_SURGE_PARTICLES = clientPair.getLeft().enableSurgeParticles;
+        DEMON_POWER_COOLDOWN = commonPair.getLeft().demonPowerCooldown;
     }
 
     private static class CommonConfig{
@@ -41,6 +43,7 @@ public class ModConfig
         public final ForgeConfigSpec.DoubleValue highGroundAdvantageDamageIndex;
         public final ForgeConfigSpec.DoubleValue lowerGroundDisadvDamageIndex;
         public final ForgeConfigSpec.BooleanValue enableGeneralCritical;
+        public final ForgeConfigSpec.IntValue demonPowerCooldown;
 
         public CommonConfig(ForgeConfigSpec.Builder builder){
             builder.push("enchantments");
@@ -65,6 +68,11 @@ public class ModConfig
                         .comment("Define the index for damage disadvantage.(Damage = Original * index)")
                         .defineInRange("lowerGroundDisadvantageDamageIndex"
                                 , 0.5d,0.01d,1.0d);
+                builder.pop();
+
+            builder.push("Creatures");
+            demonPowerCooldown = builder.comment("Whether the demon should try to activate power every X seconds.")
+                    .defineInRange("demonPowerCooldown",30,10,100);
 
         }
     }

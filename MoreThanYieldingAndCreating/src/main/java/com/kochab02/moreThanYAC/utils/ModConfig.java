@@ -35,7 +35,7 @@ public class ModConfig
         ENABLE_SURGE_PARTICLES = clientPair.getLeft().enableSurgeParticles;
         DEMON_POWER_COOLDOWN = commonPair.getLeft().demonPowerCooldown;
     }
-
+    //.
     private static class CommonConfig{
         public final ForgeConfigSpec.BooleanValue enableCompensation;
         public final ForgeConfigSpec.BooleanValue enableSangJinTianLiang;

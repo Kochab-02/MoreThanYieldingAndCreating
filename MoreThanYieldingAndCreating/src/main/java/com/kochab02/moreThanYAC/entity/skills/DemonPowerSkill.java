@@ -43,7 +43,7 @@ public class DemonPowerSkill {
         if (!(demon instanceof EntityCorruptedDemon)) return;
         CompoundTag tag = demon.getPersistentData();
         if (!tag.getBoolean(canActivateTag)) return;
-
+//.
         tag.putBoolean(canActivateTag, false);
         tag.putInt("mtyac_power_cooldown_tag", getCooldownTicks());
 

@@ -59,7 +59,7 @@ public class ParticleGenerator
         double x = entity.getX();
         double y = entity.getY() + 0.1;
         double z = entity.getZ();
-
+        //.
         double xis,zis,vxis,vzis;
         for (int index=0;index<count;index++){
             double currentAngle = (index * 2 * Math.PI) / count;

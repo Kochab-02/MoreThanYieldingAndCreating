@@ -1,5 +1,6 @@
 package com.kochab02.moreThanYAC.utils;
 
+import net.minecraft.core.BlockPos;
 import net.minecraft.core.particles.ParticleOptions;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.entity.LivingEntity;
@@ -59,6 +60,32 @@ public class ParticleGenerator
         double x = entity.getX();
         double y = entity.getY() + 0.1;
         double z = entity.getZ();
+        //.
+        double xis,zis,vxis,vzis;
+        for (int index=0;index<count;index++){
+            double currentAngle = (index * 2 * Math.PI) / count;
+            xis = radius*Math.cos(currentAngle)+ random.nextDouble()*0.2d +x;
+            zis = radius*Math.sin(currentAngle)+ random.nextDouble()*0.2d +z;
+
+            vxis = speed*Math.cos(currentAngle)+ MathUtils.sgn(Math.cos(currentAngle))*random.nextDouble()*0.1d;
+            vzis = speed*Math.sin(currentAngle)+ MathUtils.sgn(Math.sin(currentAngle))*random.nextDouble()*0.1d;
+
+            if (level instanceof ServerLevel serverLevel) {
+                serverLevel.sendParticles(particleType, xis, y, zis, 0, -vxis, 0, -vzis,1.0);
+                serverLevel.sendParticles(particleType, xis, y, zis, 1, -vxis, 0, -vzis,0.0);
+            } else {
+                level.addParticle(particleType, xis, y, zis, -vxis, 0, -vzis);
+            }
+        }
+    }
+    public static void generateComingInParticles(LivingEntity entity, BlockPos pos,
+                                                 ParticleOptions particleType,
+                                                 double speed, int count, double radius){
+        Level level = entity.level();
+        Random random = new Random();
+        double x = pos.getX();
+        double y = pos.getY() + 0.1;
+        double z = pos.getZ();
         //.
         double xis,zis,vxis,vzis;
         for (int index=0;index<count;index++){

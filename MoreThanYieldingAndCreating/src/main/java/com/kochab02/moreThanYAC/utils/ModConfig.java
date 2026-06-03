@@ -12,6 +12,7 @@ public class ModConfig
     public static final ForgeConfigSpec.DoubleValue LOWER_GROUND_DISADV_DAMAGE_INDEX;
     public static final ForgeConfigSpec.BooleanValue ENABLE_GENERAL_CRITICAL;
     public static final ForgeConfigSpec.IntValue DEMON_POWER_COOLDOWN;
+    public static final ForgeConfigSpec.DoubleValue DEMON_POWER_RANGE;
     
     public static final ForgeConfigSpec.BooleanValue ENABLE_SURGE_PARTICLES;
 
@@ -34,6 +35,7 @@ public class ModConfig
         ENABLE_GENERAL_CRITICAL = commonPair.getLeft().enableGeneralCritical;
         ENABLE_SURGE_PARTICLES = clientPair.getLeft().enableSurgeParticles;
         DEMON_POWER_COOLDOWN = commonPair.getLeft().demonPowerCooldown;
+        DEMON_POWER_RANGE = commonPair.getLeft().demonPowerRange;
     }
     //.
     private static class CommonConfig{
@@ -44,6 +46,7 @@ public class ModConfig
         public final ForgeConfigSpec.DoubleValue lowerGroundDisadvDamageIndex;
         public final ForgeConfigSpec.BooleanValue enableGeneralCritical;
         public final ForgeConfigSpec.IntValue demonPowerCooldown;
+        public final ForgeConfigSpec.DoubleValue demonPowerRange;
 
         public CommonConfig(ForgeConfigSpec.Builder builder){
             builder.push("enchantments");
@@ -73,6 +76,8 @@ public class ModConfig
             builder.push("Creatures");
             demonPowerCooldown = builder.comment("Whether the demon should try to activate power every X seconds.")
                     .defineInRange("demonPowerCooldown",30,10,100);
+            demonPowerRange = builder.comment("Whether how large the demon's power skill can affect player.")
+                    .defineInRange("demonPowerRange",4.0d,1.0d,20.0d);
 
         }
     }
